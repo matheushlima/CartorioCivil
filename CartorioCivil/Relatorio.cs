@@ -23,7 +23,7 @@ namespace CartorioCivil
 
         private void btnRelatTXT_Click(object sender, EventArgs e)
         {
-            StreamWriter z = File.CreateText(Directory.GetCurrentDirectory() + "\\teste.txt") ;
+            StreamWriter z = File.CreateText(Directory.GetCurrentDirectory() + "\\Dados.txt") ;
 
             string cs = @"URI=file:" + Directory.GetCurrentDirectory() + @"\SQLite\Cartorio.db";
 
@@ -42,18 +42,15 @@ namespace CartorioCivil
 
                     cmd.CommandText = $"select * from nascimento where dt_nascimento between '{txtDataRegistro.Text}' and '{txtDataRegistroAte.Text}';";
 
-                    //cmd.ExecuteNonQuery();
-
                     SQLiteDataReader select = cmd.ExecuteReader();
 
-                    //x.WriteLine("ID".PadRight())
+                    z.WriteLine("ID".PadRight(3) + "Nome Registrado".PadRight(52) + "Nome Pai".PadRight(52) + "Nome Mãe".PadRight(52) + "CPF Pai".PadRight(13) + "CPF Mae\n");
                     try
                     {
                         while (select.Read())
                         {
-                            z.WriteLine(select["id"].ToString().PadRight(2) + select["dt_registro"].ToString().PadRight(13) + select["dt_nascimento"].ToString().PadRight(13) + select["nome_registrado"].ToString().PadRight(52) +
-                                        select["nome_pai"].ToString().PadRight(52) + select["nome_mae"].ToString().PadRight(52) + select["dt_nascimento_pai"].ToString().PadRight(13) + select["dt_nascimento_mae"].ToString().PadRight(13) +
-                                        select["cpf_pai"].ToString().PadRight(13) + select["cpf_mae"].ToString().PadRight(13));
+                            z.WriteLine(select["id"].ToString().PadRight(3) + select["nome_registrado"].ToString().PadRight(52) + select["nome_pai"].ToString().PadRight(52) +
+                                        select["nome_mae"].ToString().PadRight(52) + select["cpf_pai"].ToString().PadRight(13) + select["cpf_mae"].ToString());
                         }
                         z.Close();
                         con.Close();
