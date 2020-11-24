@@ -7,7 +7,7 @@
 
 - O sistema irá permitir permitir escoher se quer preencher novos dados, caso não irá voltar para a tela principal com a opção de sair do sistema.
 
-- O sistema tem a função de gerar um relatorio em txt dos cadastros de registros de nascimento, porém devido a conversão de data que o sistema traz do banco essa função não esta funconando.
+- O sistema tem a função de gerar um relatorio em txt dos cadastros de registros de nascimento.
 
 # Demonstração
 
