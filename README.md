@@ -8,3 +8,21 @@
 - O sistema irá permitir permitir escoher se quer preencher novos dados, caso não irá voltar para a tela principal com a opção de sair do sistema.
 
 - O sistema tem a função de gerar um relatorio em txt dos cadastros de registros de nascimento, porém devido a conversão de data que o sistema traz do banco essa função não esta funconando.
+
+# Demonstração
+
+### Tela Principal
+
+![](https://github.com/matheushlima/CartorioCivil/blob/main/Imagens/TeleInicial.png)
+
+### Tela Cadastro Nascimento
+
+![](https://github.com/matheushlima/CartorioCivil/blob/main/Imagens/TelaCadastro.png)
+
+### Tela Cadastro Casamento
+
+![](https://github.com/matheushlima/CartorioCivil/blob/main/Imagens/TelaCadastro2.png)
+
+### Tela Geração Relatorio
+
+![](https://github.com/matheushlima/CartorioCivil/blob/main/Imagens/TelaRelatorio.png)
