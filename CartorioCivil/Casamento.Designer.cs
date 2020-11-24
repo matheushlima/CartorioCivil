@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Casamento));
-            this.txtCasamento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDataRegistro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbcConjugue1 = new System.Windows.Forms.TabControl();
             this.tbcConjuge1 = new System.Windows.Forms.TabPage();
+            this.txtDataMaeC1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataPaiC1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtNascimentoC1 = new System.Windows.Forms.MaskedTextBox();
             this.txtCPFMaeC1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtCPFPaiC1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtDataMaeC1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtDataPaiC1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNomeMaeC1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -52,16 +51,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtNomeC1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtNascimentoC1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tbcConjuge2 = new System.Windows.Forms.TabPage();
+            this.txtDataMaeC2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataPaiC2 = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataC2 = new System.Windows.Forms.MaskedTextBox();
             this.txtCPFMaeC2 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtCPFPaiC2 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtDataMaeC2 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtDataPaiC2 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtNomeMaeC2 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -71,22 +70,15 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtNomeC2 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.txtDataC2 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtDataRegistro = new System.Windows.Forms.MaskedTextBox();
+            this.txtCasamento = new System.Windows.Forms.MaskedTextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.tbcConjugue1.SuspendLayout();
             this.tbcConjuge1.SuspendLayout();
             this.tbcConjuge2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtCasamento
-            // 
-            this.txtCasamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCasamento.Location = new System.Drawing.Point(261, 153);
-            this.txtCasamento.MaxLength = 10;
-            this.txtCasamento.Name = "txtCasamento";
-            this.txtCasamento.Size = new System.Drawing.Size(162, 26);
-            this.txtCasamento.TabIndex = 8;
             // 
             // label3
             // 
@@ -97,15 +89,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Data do Casamento:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDataRegistro
-            // 
-            this.txtDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataRegistro.Location = new System.Drawing.Point(261, 114);
-            this.txtDataRegistro.MaxLength = 10;
-            this.txtDataRegistro.Name = "txtDataRegistro";
-            this.txtDataRegistro.Size = new System.Drawing.Size(162, 26);
-            this.txtDataRegistro.TabIndex = 6;
             // 
             // label1
             // 
@@ -142,13 +125,14 @@
             // tbcConjuge1
             // 
             this.tbcConjuge1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tbcConjuge1.Controls.Add(this.txtDataMaeC1);
+            this.tbcConjuge1.Controls.Add(this.txtDataPaiC1);
+            this.tbcConjuge1.Controls.Add(this.txtNascimentoC1);
             this.tbcConjuge1.Controls.Add(this.txtCPFMaeC1);
             this.tbcConjuge1.Controls.Add(this.label10);
             this.tbcConjuge1.Controls.Add(this.txtCPFPaiC1);
             this.tbcConjuge1.Controls.Add(this.label9);
-            this.tbcConjuge1.Controls.Add(this.txtDataMaeC1);
             this.tbcConjuge1.Controls.Add(this.label8);
-            this.tbcConjuge1.Controls.Add(this.txtDataPaiC1);
             this.tbcConjuge1.Controls.Add(this.label7);
             this.tbcConjuge1.Controls.Add(this.txtNomeMaeC1);
             this.tbcConjuge1.Controls.Add(this.label11);
@@ -158,7 +142,6 @@
             this.tbcConjuge1.Controls.Add(this.label6);
             this.tbcConjuge1.Controls.Add(this.txtNomeC1);
             this.tbcConjuge1.Controls.Add(this.label5);
-            this.tbcConjuge1.Controls.Add(this.txtNascimentoC1);
             this.tbcConjuge1.Controls.Add(this.label4);
             this.tbcConjuge1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbcConjuge1.Location = new System.Drawing.Point(4, 22);
@@ -168,14 +151,44 @@
             this.tbcConjuge1.TabIndex = 0;
             this.tbcConjuge1.Text = "Cônjuge 1";
             // 
+            // txtDataMaeC1
+            // 
+            this.txtDataMaeC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataMaeC1.Location = new System.Drawing.Point(255, 343);
+            this.txtDataMaeC1.Mask = "00/00/0000";
+            this.txtDataMaeC1.Name = "txtDataMaeC1";
+            this.txtDataMaeC1.Size = new System.Drawing.Size(90, 26);
+            this.txtDataMaeC1.TabIndex = 9;
+            this.txtDataMaeC1.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDataPaiC1
+            // 
+            this.txtDataPaiC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataPaiC1.Location = new System.Drawing.Point(255, 217);
+            this.txtDataPaiC1.Mask = "00/00/0000";
+            this.txtDataPaiC1.Name = "txtDataPaiC1";
+            this.txtDataPaiC1.Size = new System.Drawing.Size(90, 26);
+            this.txtDataPaiC1.TabIndex = 6;
+            this.txtDataPaiC1.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtNascimentoC1
+            // 
+            this.txtNascimentoC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNascimentoC1.Location = new System.Drawing.Point(255, 121);
+            this.txtNascimentoC1.Mask = "00/00/0000";
+            this.txtNascimentoC1.Name = "txtNascimentoC1";
+            this.txtNascimentoC1.Size = new System.Drawing.Size(90, 26);
+            this.txtNascimentoC1.TabIndex = 4;
+            this.txtNascimentoC1.ValidatingType = typeof(System.DateTime);
+            // 
             // txtCPFMaeC1
             // 
             this.txtCPFMaeC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPFMaeC1.Location = new System.Drawing.Point(255, 382);
             this.txtCPFMaeC1.MaxLength = 11;
             this.txtCPFMaeC1.Name = "txtCPFMaeC1";
-            this.txtCPFMaeC1.Size = new System.Drawing.Size(148, 26);
-            this.txtCPFMaeC1.TabIndex = 30;
+            this.txtCPFMaeC1.Size = new System.Drawing.Size(118, 26);
+            this.txtCPFMaeC1.TabIndex = 10;
             // 
             // label10
             // 
@@ -193,8 +206,8 @@
             this.txtCPFPaiC1.Location = new System.Drawing.Point(255, 256);
             this.txtCPFPaiC1.MaxLength = 11;
             this.txtCPFPaiC1.Name = "txtCPFPaiC1";
-            this.txtCPFPaiC1.Size = new System.Drawing.Size(148, 26);
-            this.txtCPFPaiC1.TabIndex = 28;
+            this.txtCPFPaiC1.Size = new System.Drawing.Size(118, 26);
+            this.txtCPFPaiC1.TabIndex = 7;
             // 
             // label9
             // 
@@ -206,15 +219,6 @@
             this.label9.Text = "CPF do Pai:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtDataMaeC1
-            // 
-            this.txtDataMaeC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataMaeC1.Location = new System.Drawing.Point(255, 343);
-            this.txtDataMaeC1.MaxLength = 10;
-            this.txtDataMaeC1.Name = "txtDataMaeC1";
-            this.txtDataMaeC1.Size = new System.Drawing.Size(148, 26);
-            this.txtDataMaeC1.TabIndex = 26;
-            // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,15 +228,6 @@
             this.label8.TabIndex = 25;
             this.label8.Text = "Data de Nascimento da Mãe:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDataPaiC1
-            // 
-            this.txtDataPaiC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataPaiC1.Location = new System.Drawing.Point(255, 217);
-            this.txtDataPaiC1.MaxLength = 10;
-            this.txtDataPaiC1.Name = "txtDataPaiC1";
-            this.txtDataPaiC1.Size = new System.Drawing.Size(148, 26);
-            this.txtDataPaiC1.TabIndex = 24;
             // 
             // label7
             // 
@@ -251,7 +246,7 @@
             this.txtNomeMaeC1.MaxLength = 50;
             this.txtNomeMaeC1.Name = "txtNomeMaeC1";
             this.txtNomeMaeC1.Size = new System.Drawing.Size(497, 26);
-            this.txtNomeMaeC1.TabIndex = 22;
+            this.txtNomeMaeC1.TabIndex = 8;
             // 
             // label11
             // 
@@ -270,7 +265,7 @@
             this.txtNomePaiC1.MaxLength = 50;
             this.txtNomePaiC1.Name = "txtNomePaiC1";
             this.txtNomePaiC1.Size = new System.Drawing.Size(497, 26);
-            this.txtNomePaiC1.TabIndex = 20;
+            this.txtNomePaiC1.TabIndex = 5;
             // 
             // label12
             // 
@@ -288,8 +283,8 @@
             this.txtCpfC1.Location = new System.Drawing.Point(255, 76);
             this.txtCpfC1.MaxLength = 11;
             this.txtCpfC1.Name = "txtCpfC1";
-            this.txtCpfC1.Size = new System.Drawing.Size(148, 26);
-            this.txtCpfC1.TabIndex = 10;
+            this.txtCpfC1.Size = new System.Drawing.Size(118, 26);
+            this.txtCpfC1.TabIndex = 3;
             // 
             // label6
             // 
@@ -308,7 +303,7 @@
             this.txtNomeC1.MaxLength = 50;
             this.txtNomeC1.Name = "txtNomeC1";
             this.txtNomeC1.Size = new System.Drawing.Size(497, 26);
-            this.txtNomeC1.TabIndex = 8;
+            this.txtNomeC1.TabIndex = 2;
             // 
             // label5
             // 
@@ -319,15 +314,6 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Nome:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtNascimentoC1
-            // 
-            this.txtNascimentoC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNascimentoC1.Location = new System.Drawing.Point(255, 121);
-            this.txtNascimentoC1.MaxLength = 10;
-            this.txtNascimentoC1.Name = "txtNascimentoC1";
-            this.txtNascimentoC1.Size = new System.Drawing.Size(148, 26);
-            this.txtNascimentoC1.TabIndex = 6;
             // 
             // label4
             // 
@@ -342,13 +328,14 @@
             // tbcConjuge2
             // 
             this.tbcConjuge2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.tbcConjuge2.Controls.Add(this.txtDataMaeC2);
+            this.tbcConjuge2.Controls.Add(this.txtDataPaiC2);
+            this.tbcConjuge2.Controls.Add(this.txtDataC2);
             this.tbcConjuge2.Controls.Add(this.txtCPFMaeC2);
             this.tbcConjuge2.Controls.Add(this.label13);
             this.tbcConjuge2.Controls.Add(this.txtCPFPaiC2);
             this.tbcConjuge2.Controls.Add(this.label14);
-            this.tbcConjuge2.Controls.Add(this.txtDataMaeC2);
             this.tbcConjuge2.Controls.Add(this.label15);
-            this.tbcConjuge2.Controls.Add(this.txtDataPaiC2);
             this.tbcConjuge2.Controls.Add(this.label16);
             this.tbcConjuge2.Controls.Add(this.txtNomeMaeC2);
             this.tbcConjuge2.Controls.Add(this.label17);
@@ -358,7 +345,6 @@
             this.tbcConjuge2.Controls.Add(this.label19);
             this.tbcConjuge2.Controls.Add(this.txtNomeC2);
             this.tbcConjuge2.Controls.Add(this.label20);
-            this.tbcConjuge2.Controls.Add(this.txtDataC2);
             this.tbcConjuge2.Controls.Add(this.label21);
             this.tbcConjuge2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbcConjuge2.Location = new System.Drawing.Point(4, 22);
@@ -368,14 +354,44 @@
             this.tbcConjuge2.TabIndex = 1;
             this.tbcConjuge2.Text = "Cônjuge 2";
             // 
+            // txtDataMaeC2
+            // 
+            this.txtDataMaeC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataMaeC2.Location = new System.Drawing.Point(255, 343);
+            this.txtDataMaeC2.Mask = "00/00/0000";
+            this.txtDataMaeC2.Name = "txtDataMaeC2";
+            this.txtDataMaeC2.Size = new System.Drawing.Size(90, 26);
+            this.txtDataMaeC2.TabIndex = 18;
+            this.txtDataMaeC2.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDataPaiC2
+            // 
+            this.txtDataPaiC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataPaiC2.Location = new System.Drawing.Point(255, 217);
+            this.txtDataPaiC2.Mask = "00/00/0000";
+            this.txtDataPaiC2.Name = "txtDataPaiC2";
+            this.txtDataPaiC2.Size = new System.Drawing.Size(90, 26);
+            this.txtDataPaiC2.TabIndex = 15;
+            this.txtDataPaiC2.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDataC2
+            // 
+            this.txtDataC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataC2.Location = new System.Drawing.Point(255, 121);
+            this.txtDataC2.Mask = "00/00/0000";
+            this.txtDataC2.Name = "txtDataC2";
+            this.txtDataC2.Size = new System.Drawing.Size(90, 26);
+            this.txtDataC2.TabIndex = 13;
+            this.txtDataC2.ValidatingType = typeof(System.DateTime);
+            // 
             // txtCPFMaeC2
             // 
             this.txtCPFMaeC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPFMaeC2.Location = new System.Drawing.Point(255, 382);
             this.txtCPFMaeC2.MaxLength = 11;
             this.txtCPFMaeC2.Name = "txtCPFMaeC2";
-            this.txtCPFMaeC2.Size = new System.Drawing.Size(148, 26);
-            this.txtCPFMaeC2.TabIndex = 48;
+            this.txtCPFMaeC2.Size = new System.Drawing.Size(118, 26);
+            this.txtCPFMaeC2.TabIndex = 19;
             // 
             // label13
             // 
@@ -393,8 +409,8 @@
             this.txtCPFPaiC2.Location = new System.Drawing.Point(255, 256);
             this.txtCPFPaiC2.MaxLength = 11;
             this.txtCPFPaiC2.Name = "txtCPFPaiC2";
-            this.txtCPFPaiC2.Size = new System.Drawing.Size(148, 26);
-            this.txtCPFPaiC2.TabIndex = 46;
+            this.txtCPFPaiC2.Size = new System.Drawing.Size(118, 26);
+            this.txtCPFPaiC2.TabIndex = 16;
             // 
             // label14
             // 
@@ -406,15 +422,6 @@
             this.label14.Text = "CPF do Pai:";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtDataMaeC2
-            // 
-            this.txtDataMaeC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataMaeC2.Location = new System.Drawing.Point(255, 343);
-            this.txtDataMaeC2.MaxLength = 10;
-            this.txtDataMaeC2.Name = "txtDataMaeC2";
-            this.txtDataMaeC2.Size = new System.Drawing.Size(148, 26);
-            this.txtDataMaeC2.TabIndex = 44;
-            // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -424,15 +431,6 @@
             this.label15.TabIndex = 43;
             this.label15.Text = "Data de Nascimento da Mãe:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDataPaiC2
-            // 
-            this.txtDataPaiC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataPaiC2.Location = new System.Drawing.Point(255, 217);
-            this.txtDataPaiC2.MaxLength = 10;
-            this.txtDataPaiC2.Name = "txtDataPaiC2";
-            this.txtDataPaiC2.Size = new System.Drawing.Size(148, 26);
-            this.txtDataPaiC2.TabIndex = 42;
             // 
             // label16
             // 
@@ -451,7 +449,7 @@
             this.txtNomeMaeC2.MaxLength = 50;
             this.txtNomeMaeC2.Name = "txtNomeMaeC2";
             this.txtNomeMaeC2.Size = new System.Drawing.Size(497, 26);
-            this.txtNomeMaeC2.TabIndex = 40;
+            this.txtNomeMaeC2.TabIndex = 17;
             // 
             // label17
             // 
@@ -470,7 +468,7 @@
             this.txtNomePaiC2.MaxLength = 50;
             this.txtNomePaiC2.Name = "txtNomePaiC2";
             this.txtNomePaiC2.Size = new System.Drawing.Size(497, 26);
-            this.txtNomePaiC2.TabIndex = 38;
+            this.txtNomePaiC2.TabIndex = 14;
             // 
             // label18
             // 
@@ -488,8 +486,8 @@
             this.txtCpfC2.Location = new System.Drawing.Point(255, 76);
             this.txtCpfC2.MaxLength = 11;
             this.txtCpfC2.Name = "txtCpfC2";
-            this.txtCpfC2.Size = new System.Drawing.Size(148, 26);
-            this.txtCpfC2.TabIndex = 36;
+            this.txtCpfC2.Size = new System.Drawing.Size(118, 26);
+            this.txtCpfC2.TabIndex = 12;
             // 
             // label19
             // 
@@ -508,7 +506,7 @@
             this.txtNomeC2.MaxLength = 50;
             this.txtNomeC2.Name = "txtNomeC2";
             this.txtNomeC2.Size = new System.Drawing.Size(497, 26);
-            this.txtNomeC2.TabIndex = 34;
+            this.txtNomeC2.TabIndex = 11;
             // 
             // label20
             // 
@@ -519,15 +517,6 @@
             this.label20.TabIndex = 33;
             this.label20.Text = "Nome:";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDataC2
-            // 
-            this.txtDataC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataC2.Location = new System.Drawing.Point(255, 121);
-            this.txtDataC2.MaxLength = 10;
-            this.txtDataC2.Name = "txtDataC2";
-            this.txtDataC2.Size = new System.Drawing.Size(148, 26);
-            this.txtDataC2.TabIndex = 32;
             // 
             // label21
             // 
@@ -551,19 +540,55 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "CADASTRAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtDataRegistro
+            // 
+            this.txtDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataRegistro.Location = new System.Drawing.Point(261, 114);
+            this.txtDataRegistro.Mask = "00/00/0000";
+            this.txtDataRegistro.Name = "txtDataRegistro";
+            this.txtDataRegistro.Size = new System.Drawing.Size(90, 26);
+            this.txtDataRegistro.TabIndex = 21;
+            this.txtDataRegistro.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtCasamento
+            // 
+            this.txtCasamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCasamento.Location = new System.Drawing.Point(261, 153);
+            this.txtCasamento.Mask = "00/00/0000";
+            this.txtCasamento.Name = "txtCasamento";
+            this.txtCasamento.Size = new System.Drawing.Size(90, 26);
+            this.txtCasamento.TabIndex = 1;
+            this.txtCasamento.ValidatingType = typeof(System.DateTime);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnCancelar.Location = new System.Drawing.Point(311, 741);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(176, 40);
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Casamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(794, 747);
+            this.ClientSize = new System.Drawing.Size(794, 794);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.txtCasamento);
+            this.Controls.Add(this.txtDataRegistro);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbcConjugue1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtCasamento);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDataRegistro);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Casamento";
@@ -580,10 +605,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtCasamento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDataRegistro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tbcConjugue1;
@@ -593,15 +615,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNomeC1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtNascimentoC1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCPFMaeC1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtCPFPaiC1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtDataMaeC1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtDataPaiC1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtNomeMaeC1;
         private System.Windows.Forms.Label label11;
@@ -611,9 +630,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtCPFPaiC2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtDataMaeC2;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtDataPaiC2;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtNomeMaeC2;
         private System.Windows.Forms.Label label17;
@@ -623,8 +640,16 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtNomeC2;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtDataC2;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox txtDataMaeC1;
+        private System.Windows.Forms.MaskedTextBox txtDataPaiC1;
+        private System.Windows.Forms.MaskedTextBox txtNascimentoC1;
+        private System.Windows.Forms.MaskedTextBox txtDataMaeC2;
+        private System.Windows.Forms.MaskedTextBox txtDataPaiC2;
+        private System.Windows.Forms.MaskedTextBox txtDataC2;
+        private System.Windows.Forms.MaskedTextBox txtDataRegistro;
+        private System.Windows.Forms.MaskedTextBox txtCasamento;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

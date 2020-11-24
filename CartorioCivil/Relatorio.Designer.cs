@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Relatorio));
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDataRegistro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRelatTXT = new System.Windows.Forms.Button();
-            this.btnRelatXML = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.txtDataRegistro = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataRegistroAte = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label2
@@ -51,19 +51,10 @@
             this.label2.Text = "Registro de Nascimento";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtDataRegistro
-            // 
-            this.txtDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataRegistro.Location = new System.Drawing.Point(251, 131);
-            this.txtDataRegistro.MaxLength = 10;
-            this.txtDataRegistro.Name = "txtDataRegistro";
-            this.txtDataRegistro.Size = new System.Drawing.Size(133, 26);
-            this.txtDataRegistro.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 125);
+            this.label1.Location = new System.Drawing.Point(241, 125);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 39);
             this.label1.TabIndex = 3;
@@ -79,15 +70,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "DATA:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(482, 131);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 26);
-            this.textBox1.TabIndex = 7;
             // 
             // label4
             // 
@@ -105,7 +87,7 @@
             this.btnRelatTXT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRelatTXT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRelatTXT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnRelatTXT.Location = new System.Drawing.Point(188, 197);
+            this.btnRelatTXT.Location = new System.Drawing.Point(299, 197);
             this.btnRelatTXT.Name = "btnRelatTXT";
             this.btnRelatTXT.Size = new System.Drawing.Size(200, 40);
             this.btnRelatTXT.TabIndex = 20;
@@ -113,31 +95,52 @@
             this.btnRelatTXT.UseVisualStyleBackColor = false;
             this.btnRelatTXT.Click += new System.EventHandler(this.btnRelatTXT_Click);
             // 
-            // btnRelatXML
+            // btnCancelar
             // 
-            this.btnRelatXML.BackColor = System.Drawing.Color.Black;
-            this.btnRelatXML.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRelatXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatXML.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnRelatXML.Location = new System.Drawing.Point(430, 197);
-            this.btnRelatXML.Name = "btnRelatXML";
-            this.btnRelatXML.Size = new System.Drawing.Size(200, 40);
-            this.btnRelatXML.TabIndex = 21;
-            this.btnRelatXML.Text = "RELATORIO XML";
-            this.btnRelatXML.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnCancelar.Location = new System.Drawing.Point(313, 243);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(176, 40);
+            this.btnCancelar.TabIndex = 23;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // txtDataRegistro
+            // 
+            this.txtDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataRegistro.Location = new System.Drawing.Point(298, 131);
+            this.txtDataRegistro.Mask = "00/00/0000";
+            this.txtDataRegistro.Name = "txtDataRegistro";
+            this.txtDataRegistro.Size = new System.Drawing.Size(90, 26);
+            this.txtDataRegistro.TabIndex = 24;
+            this.txtDataRegistro.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDataRegistroAte
+            // 
+            this.txtDataRegistroAte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataRegistroAte.Location = new System.Drawing.Point(482, 131);
+            this.txtDataRegistroAte.Mask = "00/00/0000";
+            this.txtDataRegistroAte.Name = "txtDataRegistroAte";
+            this.txtDataRegistroAte.Size = new System.Drawing.Size(90, 26);
+            this.txtDataRegistroAte.TabIndex = 25;
+            this.txtDataRegistroAte.ValidatingType = typeof(System.DateTime);
             // 
             // Relatorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 265);
-            this.Controls.Add(this.btnRelatXML);
+            this.ClientSize = new System.Drawing.Size(800, 290);
+            this.Controls.Add(this.txtDataRegistroAte);
+            this.Controls.Add(this.txtDataRegistro);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRelatTXT);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDataRegistro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -152,12 +155,12 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDataRegistro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRelatTXT;
-        private System.Windows.Forms.Button btnRelatXML;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.MaskedTextBox txtDataRegistro;
+        private System.Windows.Forms.MaskedTextBox txtDataRegistroAte;
     }
 }

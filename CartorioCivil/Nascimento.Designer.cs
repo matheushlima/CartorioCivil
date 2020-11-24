@@ -49,6 +49,7 @@
             this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
             this.txtDataPai = new System.Windows.Forms.MaskedTextBox();
             this.txtDataMae = new System.Windows.Forms.MaskedTextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -90,7 +91,7 @@
             this.txtNomeRegistro.MaxLength = 50;
             this.txtNomeRegistro.Name = "txtNomeRegistro";
             this.txtNomeRegistro.Size = new System.Drawing.Size(526, 26);
-            this.txtNomeRegistro.TabIndex = 6;
+            this.txtNomeRegistro.TabIndex = 2;
             // 
             // label4
             // 
@@ -109,7 +110,7 @@
             this.txtNomePai.MaxLength = 50;
             this.txtNomePai.Name = "txtNomePai";
             this.txtNomePai.Size = new System.Drawing.Size(526, 26);
-            this.txtNomePai.TabIndex = 8;
+            this.txtNomePai.TabIndex = 3;
             // 
             // label5
             // 
@@ -128,7 +129,7 @@
             this.txtNomeMae.MaxLength = 50;
             this.txtNomeMae.Name = "txtNomeMae";
             this.txtNomeMae.Size = new System.Drawing.Size(526, 26);
-            this.txtNomeMae.TabIndex = 10;
+            this.txtNomeMae.TabIndex = 6;
             // 
             // label6
             // 
@@ -167,7 +168,7 @@
             this.txtCPFPai.MaxLength = 11;
             this.txtCPFPai.Name = "txtCPFPai";
             this.txtCPFPai.Size = new System.Drawing.Size(133, 26);
-            this.txtCPFPai.TabIndex = 16;
+            this.txtCPFPai.TabIndex = 5;
             // 
             // label9
             // 
@@ -186,7 +187,7 @@
             this.txtCPFMae.MaxLength = 11;
             this.txtCPFMae.Name = "txtCPFMae";
             this.txtCPFMae.Size = new System.Drawing.Size(133, 26);
-            this.txtCPFMae.TabIndex = 18;
+            this.txtCPFMae.TabIndex = 8;
             // 
             // label10
             // 
@@ -229,7 +230,7 @@
             this.txtNascimento.Mask = "00/00/0000";
             this.txtNascimento.Name = "txtNascimento";
             this.txtNascimento.Size = new System.Drawing.Size(90, 26);
-            this.txtNascimento.TabIndex = 21;
+            this.txtNascimento.TabIndex = 1;
             this.txtNascimento.ValidatingType = typeof(System.DateTime);
             // 
             // txtDataPai
@@ -239,7 +240,7 @@
             this.txtDataPai.Mask = "00/00/0000";
             this.txtDataPai.Name = "txtDataPai";
             this.txtDataPai.Size = new System.Drawing.Size(90, 26);
-            this.txtDataPai.TabIndex = 22;
+            this.txtDataPai.TabIndex = 4;
             this.txtDataPai.ValidatingType = typeof(System.DateTime);
             // 
             // txtDataMae
@@ -249,15 +250,30 @@
             this.txtDataMae.Mask = "00/00/0000";
             this.txtDataMae.Name = "txtDataMae";
             this.txtDataMae.Size = new System.Drawing.Size(90, 26);
-            this.txtDataMae.TabIndex = 23;
+            this.txtDataMae.TabIndex = 7;
             this.txtDataMae.ValidatingType = typeof(System.DateTime);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCancelar.Location = new System.Drawing.Point(293, 595);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(176, 40);
+            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Nascimento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(801, 624);
+            this.ClientSize = new System.Drawing.Size(801, 647);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtDataMae);
             this.Controls.Add(this.txtDataPai);
             this.Controls.Add(this.txtNascimento);
@@ -309,5 +325,6 @@
         private System.Windows.Forms.MaskedTextBox txtNascimento;
         private System.Windows.Forms.MaskedTextBox txtDataPai;
         private System.Windows.Forms.MaskedTextBox txtDataMae;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

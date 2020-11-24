@@ -38,5 +38,10 @@ namespace CartorioCivil
             relatorio.Show();
             this.Hide();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

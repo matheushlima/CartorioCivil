@@ -30,23 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Obito));
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDataMae = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtDataPai = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtNomeMae = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNomePai = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtObito = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDataRegistro = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNomeFalecido = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNascimento = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtDataRegistro = new System.Windows.Forms.MaskedTextBox();
+            this.txtObito = new System.Windows.Forms.MaskedTextBox();
+            this.txtNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataPai = new System.Windows.Forms.MaskedTextBox();
+            this.txtDataMae = new System.Windows.Forms.MaskedTextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -61,15 +62,6 @@
             this.label2.Text = "Dados do Óbito";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtDataMae
-            // 
-            this.txtDataMae.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataMae.Location = new System.Drawing.Point(262, 391);
-            this.txtDataMae.MaxLength = 10;
-            this.txtDataMae.Name = "txtDataMae";
-            this.txtDataMae.Size = new System.Drawing.Size(133, 26);
-            this.txtDataMae.TabIndex = 28;
-            // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -79,15 +71,6 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Data de Nascimento da Mãe:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDataPai
-            // 
-            this.txtDataPai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataPai.Location = new System.Drawing.Point(262, 313);
-            this.txtDataPai.MaxLength = 10;
-            this.txtDataPai.Name = "txtDataPai";
-            this.txtDataPai.Size = new System.Drawing.Size(133, 26);
-            this.txtDataPai.TabIndex = 26;
             // 
             // label7
             // 
@@ -106,7 +89,7 @@
             this.txtNomeMae.MaxLength = 50;
             this.txtNomeMae.Name = "txtNomeMae";
             this.txtNomeMae.Size = new System.Drawing.Size(526, 26);
-            this.txtNomeMae.TabIndex = 24;
+            this.txtNomeMae.TabIndex = 6;
             // 
             // label6
             // 
@@ -125,7 +108,7 @@
             this.txtNomePai.MaxLength = 50;
             this.txtNomePai.Name = "txtNomePai";
             this.txtNomePai.Size = new System.Drawing.Size(526, 26);
-            this.txtNomePai.TabIndex = 22;
+            this.txtNomePai.TabIndex = 4;
             // 
             // label5
             // 
@@ -137,15 +120,6 @@
             this.label5.Text = "Nome do Pai: ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtObito
-            // 
-            this.txtObito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObito.Location = new System.Drawing.Point(262, 227);
-            this.txtObito.MaxLength = 10;
-            this.txtObito.Name = "txtObito";
-            this.txtObito.Size = new System.Drawing.Size(133, 26);
-            this.txtObito.TabIndex = 18;
-            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -155,15 +129,6 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Data do óbito:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtDataRegistro
-            // 
-            this.txtDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataRegistro.Location = new System.Drawing.Point(262, 107);
-            this.txtDataRegistro.MaxLength = 10;
-            this.txtDataRegistro.Name = "txtDataRegistro";
-            this.txtDataRegistro.Size = new System.Drawing.Size(133, 26);
-            this.txtDataRegistro.TabIndex = 16;
             // 
             // label1
             // 
@@ -182,7 +147,7 @@
             this.txtNomeFalecido.MaxLength = 50;
             this.txtNomeFalecido.Name = "txtNomeFalecido";
             this.txtNomeFalecido.Size = new System.Drawing.Size(526, 26);
-            this.txtNomeFalecido.TabIndex = 30;
+            this.txtNomeFalecido.TabIndex = 1;
             // 
             // label4
             // 
@@ -193,15 +158,6 @@
             this.label4.TabIndex = 29;
             this.label4.Text = "Nome do Falecido: ";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtNascimento
-            // 
-            this.txtNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNascimento.Location = new System.Drawing.Point(262, 187);
-            this.txtNascimento.MaxLength = 10;
-            this.txtNascimento.Name = "txtNascimento";
-            this.txtNascimento.Size = new System.Drawing.Size(133, 26);
-            this.txtNascimento.TabIndex = 32;
             // 
             // label9
             // 
@@ -222,39 +178,104 @@
             this.button1.Location = new System.Drawing.Point(321, 443);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 40);
-            this.button1.TabIndex = 33;
+            this.button1.TabIndex = 8;
             this.button1.Text = "CADASTRAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtDataRegistro
+            // 
+            this.txtDataRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataRegistro.Location = new System.Drawing.Point(262, 107);
+            this.txtDataRegistro.Mask = "00/00/0000";
+            this.txtDataRegistro.Name = "txtDataRegistro";
+            this.txtDataRegistro.Size = new System.Drawing.Size(90, 26);
+            this.txtDataRegistro.TabIndex = 34;
+            this.txtDataRegistro.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtObito
+            // 
+            this.txtObito.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObito.Location = new System.Drawing.Point(262, 227);
+            this.txtObito.Mask = "00/00/0000";
+            this.txtObito.Name = "txtObito";
+            this.txtObito.Size = new System.Drawing.Size(90, 26);
+            this.txtObito.TabIndex = 3;
+            this.txtObito.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtNascimento
+            // 
+            this.txtNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNascimento.Location = new System.Drawing.Point(262, 187);
+            this.txtNascimento.Mask = "00/00/0000";
+            this.txtNascimento.Name = "txtNascimento";
+            this.txtNascimento.Size = new System.Drawing.Size(90, 26);
+            this.txtNascimento.TabIndex = 2;
+            this.txtNascimento.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDataPai
+            // 
+            this.txtDataPai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataPai.Location = new System.Drawing.Point(262, 313);
+            this.txtDataPai.Mask = "00/00/0000";
+            this.txtDataPai.Name = "txtDataPai";
+            this.txtDataPai.Size = new System.Drawing.Size(90, 26);
+            this.txtDataPai.TabIndex = 5;
+            this.txtDataPai.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtDataMae
+            // 
+            this.txtDataMae.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataMae.Location = new System.Drawing.Point(262, 391);
+            this.txtDataMae.Mask = "00/00/0000";
+            this.txtDataMae.Name = "txtDataMae";
+            this.txtDataMae.Size = new System.Drawing.Size(90, 26);
+            this.txtDataMae.TabIndex = 7;
+            this.txtDataMae.ValidatingType = typeof(System.DateTime);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnCancelar.Location = new System.Drawing.Point(321, 489);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(176, 40);
+            this.btnCancelar.TabIndex = 35;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // Obito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 495);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(800, 545);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.txtDataMae);
+            this.Controls.Add(this.txtDataPai);
             this.Controls.Add(this.txtNascimento);
+            this.Controls.Add(this.txtObito);
+            this.Controls.Add(this.txtDataRegistro);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtNomeFalecido);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDataMae);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtDataPai);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtNomeMae);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtNomePai);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtObito);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDataRegistro);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Obito";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Obito";
-            this.Load += new System.EventHandler(this.Obito_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,22 +284,23 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDataMae;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtDataPai;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtNomeMae;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNomePai;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtObito;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDataRegistro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNomeFalecido;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNascimento;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MaskedTextBox txtDataRegistro;
+        private System.Windows.Forms.MaskedTextBox txtObito;
+        private System.Windows.Forms.MaskedTextBox txtNascimento;
+        private System.Windows.Forms.MaskedTextBox txtDataPai;
+        private System.Windows.Forms.MaskedTextBox txtDataMae;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

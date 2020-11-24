@@ -34,6 +34,7 @@
             this.btnCasamento = new System.Windows.Forms.Button();
             this.btnObito = new System.Windows.Forms.Button();
             this.btnRelatorio = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -105,12 +106,28 @@
             this.btnRelatorio.UseVisualStyleBackColor = false;
             this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
             // 
+            // btnSair
+            // 
+            this.btnSair.BackColor = System.Drawing.Color.Red;
+            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(180, 359);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(153, 58);
+            this.btnSair.TabIndex = 6;
+            this.btnSair.Text = "SAIR";
+            this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(533, 368);
+            this.ClientSize = new System.Drawing.Size(533, 444);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnRelatorio);
             this.Controls.Add(this.btnObito);
             this.Controls.Add(this.btnCasamento);
@@ -131,6 +148,7 @@
         private System.Windows.Forms.Button btnCasamento;
         private System.Windows.Forms.Button btnObito;
         private System.Windows.Forms.Button btnRelatorio;
+        private System.Windows.Forms.Button btnSair;
     }
 }
 
